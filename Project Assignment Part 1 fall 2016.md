@@ -1,29 +1,6 @@
 ­
 # Project Assignment 2 semester Fall 2016
 # Part 1 of 2
-
-[The task](#task)
-
-Product requirements
-
-Process requirements – in short
-
-Documentation requirements – in short
-
-About achieving academic goals while working on a project
-
-Sprint Meetings
-
-Technical Review meetings
-
-Final Delivery (Exam Report and Product):
-
-Hand-in
-
-Assessment criteria
-
-Meetings - Preliminary Schedule
-
 # The task
 
 Working in groups and using Scrum as the process model, you must develop major parts of a multi-user database application.
