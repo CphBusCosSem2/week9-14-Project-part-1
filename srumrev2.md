@@ -6,7 +6,7 @@ Der skal vises kørende kode for de prioriterede Stories fra Product Backlog.
 Vi skal derefter i fællesskab (PO og Team) prioritere næste sprint på baggrund af reviderede estimater og eventuelle andre ændringer til Product Backlog'en.
 
 ## Review
-Der skal vises ER diagram over hvordan databasen ser ud. 
+Der skal vises ER diagram over databasen. 
 
 Endvidere vil den kode der er vist til PO blive reviewet.
 
