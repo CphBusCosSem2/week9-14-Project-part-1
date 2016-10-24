@@ -203,7 +203,8 @@ Date: Monday December 19th 2016 at 23.59 using Wiseflow.
 
 # Meetings - Preliminary Schedule
 
-Each team must participate in Sprint-meetings with &quot;Product Owner&quot; AND technical reviews. Schedule for these meetings will appear are on the semesterplan, which is on Fronter!
+Each team must participate in Sprint-meetings with &quot;Product Owner&quot; AND technical reviews. 
+Schedule for these meetings will appear are on [the semesterplan](https://docs.google.com/spreadsheets/d/1zSEZmKhArmABz01OYuT6r_hhprzMmqxqNV_IkqIMocY/edit?pref=2&pli=1#gid=0).
 
 **E-mail**
 
