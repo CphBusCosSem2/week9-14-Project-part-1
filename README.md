@@ -3,6 +3,8 @@ This period will be mostly project, with sprints and development of the solution
 
 I have added a [file on gitignore](gitignore.md), as many had problems with it.
 
+
+
 Useful ressources:
 
 - [Formal project assignment part 1](https://github.com/CphBusCosSem2/week9-14-Project-part-1/blob/master/Project%20Assignment%20Part%201%20fall%202016.md)
