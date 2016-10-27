@@ -1,6 +1,6 @@
 # Group list
 
-Gruppe 1 |
+Gruppe 1 
 ---|---
 | Yousef Mohsen
 | Janus Udsen 
