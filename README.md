@@ -6,8 +6,9 @@ I have added a [file on gitignore](gitignore.md), as many had problems with it.
 
 - [Groups](groups.md)
 - [Scrum 2 og review 1 on October 28th](scrumrev2.md)
+- [Testing - October 31. and November 1.](testing.md)
 
-Useful ressources:s
+Useful ressources:
 
 - [Formal project assignment part 1](https://github.com/CphBusCosSem2/week9-14-Project-part-1/blob/master/Project%20Assignment%20Part%201%20fall%202016.md)
 - [Semester plan](https://docs.google.com/spreadsheets/d/1zSEZmKhArmABz01OYuT6r_hhprzMmqxqNV_IkqIMocY/edit?pref=2&pli=1#gid=0) Including when there are scrum meetings and reviews, as well as mandatory presence.

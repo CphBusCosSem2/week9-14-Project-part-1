@@ -1,3 +1,7 @@
 [submodule "2semWebbuildingsWithTest"]
 	path = 2semWebbuildingsWithTest
 	url = https://github.com/kaspercphbusiness/2semWebbuildingsWithTest.git
+	
+[submodule "SortingAlgorithms"]
+	path = SortingAlgorithms
+	url = https://github.com/kaspercphbusiness/TesttingSortingAlgs.git	
