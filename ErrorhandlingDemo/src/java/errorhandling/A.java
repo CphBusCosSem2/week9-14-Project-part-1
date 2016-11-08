@@ -11,7 +11,11 @@ import java.util.logging.Logger;
 public class A {
     public static void main(String[] args) {
         try {
+            //        try {
             a();
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -20,4 +24,3 @@ public class A {
     public static void b() throws Exception{ c();}
     public static void c() throws Exception{ throw new Exception();}
 }
-

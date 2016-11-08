@@ -35,3 +35,4 @@ Icon
 ### jacocoverage tool
 .jacocoverage/
 /ErrorhandlingDemo/nbproject/private/
+/ExceptionDemo/nbproject/private/
