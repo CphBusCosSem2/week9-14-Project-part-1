@@ -15,7 +15,10 @@ Useful ressources:
 
 There are some topics which will be addressed in the project period. Basically they are best understood when you have a larger system to keep track of.
 
-- Week 10: there will be a few days on how to write automated tests for part of your program
-- Week 11: there will a day on how to handle all the SQL exceptions in a good manner
-- Week 12: there will be a day on how to refactor your program into a better style
-- Week 13: there will be two days where we talk about overall architecture and code documentation
+- Week 10: a few days on how to write automated tests for part of your program
+- Week 11: a day on how to handle all the SQL exceptions in a good manner [slides here](errorhandling.md) and example code in 2 projects: 
+    1. ErrorhandlingDemo and
+    2. ExceptionDemo
+- Week 12: a day on how to refactor your program into a better style
+- Week 13: two days where we talk about overall architecture and code documentation
+
