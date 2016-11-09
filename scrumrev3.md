@@ -22,3 +22,7 @@ Endvidere vil den kode der er vist til PO blive reviewet.
  14:35-00  | grp6  | grp5
  15:00-25  | grp7  | grp8
  15:25-50  | grp8  | grp7
+
+grp4: : https://github.com/Bearukun/Polygon og https://waffle.io/Bearukun/Polygon
+grp5: https://github.com/NikiSkaarup/sundebygninger
+grp8: https://github.com/NisseAnd/Polygon/tree/master
