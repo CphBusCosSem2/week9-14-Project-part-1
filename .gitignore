@@ -29,8 +29,9 @@ Icon
 *.war
 *.ear
 
-# word #
+# word og pptx#
 *.docx
+*.pptx
 
 ### jacocoverage tool
 .jacocoverage/

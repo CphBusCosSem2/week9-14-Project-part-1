@@ -22,3 +22,9 @@ There are some topics which will be addressed in the project period. Basically t
 - Week 12: a day on how to refactor your program into a better style
 - Week 13: two days where we talk about overall architecture and code documentation
 
+In this repo there is now a demo folder that contains demo projects to show simple examples of how to solve:  
+1. testing: testBat  
+2. exception handling in java: ExceptionHandling  
+3. how to send mail from a java program: SendMail  
+4. how to create pdf files from a servlet: CreatePDF  
+5. 
