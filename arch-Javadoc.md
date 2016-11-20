@@ -44,4 +44,26 @@ For example, a comment for a servlet should say which jsp pages has forms that s
 A domain class could document which database tables it mirrors, and if how it is instantiated - in the presentation layer, the database layer, or both.
 
 ## Documenting methods
-When documenting a method, there are a 
+When documenting a method, there focus is on describing these four aspects of a method:
+
+- the parameters, what they are used for and if there are expected values (e.g. not null)
+- the return value - how does it depend on the paramters and the state of the object
+- state change - how does this method change the state of the object
+- thows - if the method thows an exception, state under what condition it is thrown.
+
+## Documenting packages
+Documenting packages is done in a special file named "package-info.java". 
+
+Such a file can be made using the usual netbeans "new". Package-info is one of the files that can be created under the Java category.
+
+For packages you should document:
+
+- its cohesion principle
+- how the major classes work together
+
+The cohesion priciple can for instance be that _this package contains the classes of the system's domain layer_". 
+
+Documenting how the major classes work together can often be illustrated using a sequence diagram.
+
+## Overview documentation
+The overview documentation should say how the various packages work together, and perhaps how key classes provide the coupling between the packages.
