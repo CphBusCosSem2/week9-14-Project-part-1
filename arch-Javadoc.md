@@ -29,7 +29,17 @@ and ends as a normal comment
 ```
 The first sentence - up until the first period is used in headings and should be short and and to the point. 
 
-Inside the comments 
+Inside the comments you can use special documentation tags to control how the final html is generated. The most commonly used tags are:
+
+- @param name - comment about the parameter
+- @return - comment about what the method returns
+- @throws - comment about which exception is thrown
+- @author - who wrote this class
+- @version - what version of the class is this
+
+When using git, both author and version are better tracked using the version history than through these tags.
+
+A full description of tags is at this page at the [official java documentation](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#format)
 
 ## Documenting classes
 
@@ -66,4 +76,4 @@ The cohesion priciple can for instance be that _this package contains the classe
 Documenting how the major classes work together can often be illustrated using a sequence diagram.
 
 ## Overview documentation
-The overview documentation should say how the various packages work together, and perhaps how key classes provide the coupling between the packages.
+The overview documentation should say how the various packages work together, and how key classes provide the coupling between the packages.
