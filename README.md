@@ -7,7 +7,9 @@ I have added a [file on gitignore](gitignore.md), as many had problems with it.
 - [Groups](groups.md)
 - [Scrum 2 og review 1 on October 28th](scrumrev2.md)
 - [Testing - October 31. and November 1.](testing.md)
+- [Scrum 3 og review 2 on November 11th](scrumrev3.md)
 - [Architecture and Documentation - November 21. and 22.](arch-readme.md)
+- [Scrum 4 og review 3 on November 25th](scrumrev4.md)
 
 Useful ressources:
 
