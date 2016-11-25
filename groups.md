@@ -19,7 +19,6 @@ Gruppe 3 |
 | Rune Halvor Jensen
 | Troels Lyrn
 | Jonas Schack Nielsen 
-| Morten Pilemann Jensen
 
 Gruppe 4  |
 ---|---
@@ -52,3 +51,7 @@ Gruppe 8  |
 | Anders Nissen 
 | Poul Nikolai Jørgensen
 | Peter Nicolai Riis
+
+Gruppe 9  |
+---|---
+| Morten Pilemann Jensen

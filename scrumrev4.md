@@ -21,7 +21,8 @@ Endvidere vil den kode der er vist til PO blive reviewet.
  14:10-35  | grp5  | grp6
  14:35-00  | grp6  | grp5
  15:00-25  | grp7  | grp8
- 15:25-50  | grp8  | grp7
+ 15:25-50  | grp8  | grp9
+ 15:50-15  | grp9  | grp7
 
 grp1: https://github.com/you7inho/Polygon
 
