@@ -1,15 +1,14 @@
-package dk.webtrade.createpdf;
+package dk.webtrade.itextpdf;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Thomas Hartmann - tha@cphbusiness.dk created on Nov 9, 2016
  */
-@WebServlet(name = "ImagePdf", urlPatterns = {"/ImagePdf"})
-public class ImagePdf extends HttpServlet {
+@WebServlet(name = "PdfMaker", urlPatterns = {"/PdfMaker"})
+public class PdfMaker extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,37 +31,48 @@ public class ImagePdf extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         response.setContentType("application/pdf");
         Document document = new Document();
         try {
             PdfWriter.getInstance(document, response.getOutputStream());
             document.open();
-
-            PdfPTable table = new PdfPTable(2);
-            table.addCell("1");
-            table.addCell("2");
-            table.addCell("3");
-            table.addCell("4");
-            table.addCell("5");
-            table.addCell("6");
-
-            document.add(table);
             document.addTitle("My PDF Title");
-            document.add(new Paragraph("Some content here...."));
 
-            String rest ="img/donald.jpg";
+            PdfPTable table = new PdfPTable(3);
+            table.setWidthPercentage(100);
+            table.addCell(getCell("Text to the left", PdfPCell.ALIGN_LEFT));
+            table.addCell(getCell("Text in the middle", PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell("Text to the right", PdfPCell.ALIGN_RIGHT));
+            document.add(table);
             
+            String text = "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?";
+            document.add(new Paragraph("\n")); //Add an empty line
+            document.add(new Paragraph(text));
+            document.add(new Paragraph("\n")); //Add an empty line
+            document.add(new Paragraph("\n")); //Add an empty line
+            document.add(new Paragraph("\n")); //Add an empty line
+            
+            table = new PdfPTable(2);
+            String rest ="img/donald.jpg";
             String imgurl = request.getRequestURL().substring(0, request.getRequestURL().lastIndexOf("/")+1)+rest;
             Image image1 = Image.getInstance(imgurl);
-            document.add(image1);
-            document.add(new Paragraph(imgurl));
+            table.addCell(new PdfPCell(image1));
+            table.addCell(new PdfPCell(new Phrase("Her er noget besrkivelse af hvad vi ser på billedet bla bla bla bla")));
+            document.add(table);
             document.close();
         } catch (DocumentException e) {
             e.printStackTrace();
         }
-
     }
+    public PdfPCell getCell(String text, int alignment) {
+    PdfPCell cell = new PdfPCell(new Phrase(text));
+    cell.setPadding(0);
+    cell.setHorizontalAlignment(alignment);
+    cell.setBorder(PdfPCell.NO_BORDER);
+    return cell;
+}
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
