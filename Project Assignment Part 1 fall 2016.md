@@ -115,8 +115,7 @@ The delivery must as a minimum contain the following artifacts:
   -  Design Class Diagram (DCD)
   -  Sequence Diagram(s) (SD&#39;s)  covering min. one core or complex scenario
   -  Description of the qualities of your design (coupling, cohesion, the use of patterns etc.)
-  -  E/R diagram
-  -  Relational Schema  - including assessment of compliance with normal forms
+  -  E/R diagram - including assessment of compliance with normal forms
   -  Description of the most complex parts of the code
   -  Descriptions of complex or core SQL queries and updates
   -  SQL scripts (appendix)
